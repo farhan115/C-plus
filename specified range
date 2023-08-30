@@ -1,0 +1,33 @@
+#include <iostream>
+
+int main() {
+    int start, end;
+
+    std::cout << "Enter the start number: ";
+    std::cin >> start;
+
+    std::cout << "Enter the end number: ";
+    std::cin >> end;
+
+    if (start > end) {
+        std::cout << "Invalid range. Start number should be less than or equal to the end number." << std::endl;
+        return 1;
+    }
+
+    std::cout << "Numbers in the range [" << start << ", " << end << "]:" << std::endl;
+
+    for (int num = start; num <= end; ++num) {
+        std::cout << num << " ";
+    }
+
+    std::cout << std::endl;
+
+    return 0;
+}
+
+
+output:
+Enter the start number: 34
+Enter the end number: 60
+Numbers in the range [34, 60]:
+34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 
